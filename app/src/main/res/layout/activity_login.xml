@@ -45,10 +45,10 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:background="@android:color/transparent"
-        android:drawableLeft="@drawable/shape_02"
+        android:drawableRight="@drawable/shape_02"
         android:drawablePadding="16dp"
         android:ems="10"
-        android:hint="jennifer.wilson88@gmail.com"
+        android:hint="بريدك الألكترونى"
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:paddingLeft="10dp"
@@ -57,36 +57,35 @@
         android:layout_weight="0.03"
         android:id="@+id/edit_text_email"/>
 
-    <view
+    <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="5dp"
-        android:background="#fff" />
-
+        android:background="#fff"
+        />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:background="@android:color/transparent"
-        android:drawableLeft="@drawable/shape_3"
+        android:drawableRight="@drawable/shape_03"
         android:drawablePadding="16dp"
         android:ems="10"
         android:id="@+id/edit_text_password"
-        android:hint="*  *  *  *  *  *  *  *  *  *  *  *  *  *"
+        android:hint="كلمة السر"
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:paddingLeft="10dp"
         android:textColorHint="#fff"
         android:textSize="16sp"
         android:layout_weight="0.05" />
-
-    <view
+    <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="5dp"
-        android:background="#fff" />
-
+        android:background="#fff"
+        />
     <Button
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -109,5 +108,7 @@
         android:textAllCaps="true"
         android:textColor="#fff"
         android:textSize="25dp"
-        android:id="@+id/edit_text_forget_passowrd"/>
+        android:id="@+id/edit_text_forget_passowrd"
+        android:onClick="navigate"/>
+
 </LinearLayout>

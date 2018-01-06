@@ -33,6 +33,7 @@
                 android:text="Jeniffer Wilson"
                 android:textAllCaps="false"
                 android:textColor="#fff"
-                android:textSize="22sp"/>
+                android:textSize="22sp"
+                android:id="@+id/edit_text_name"/>
         </LinearLayout>
     </RelativeLayout>

@@ -1,9 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/login"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.root.waslni.Signup">
+    android:background="@drawable/layer_3"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:weightSum="1">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="إنشاء حساب"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/shape_02"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="عنوان بريدك الألكترونى"
+        android:text=""
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingRight="10dp"
+        android:textColorHint="#fff"
+        android:textSize="16sp"
+        android:layout_weight="0.03"
+        android:id="@+id/edit_text_email"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/shape_02"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:id="@+id/edit_text_name"
+        android:hint="  إسم المستخدم"
+        android:inputType="text"
+        android:text=""
+        android:maxLines="1"
+        android:paddingRight="10dp"
+        android:textColorHint="#fff"
+        android:textSize="16sp"
+        android:layout_weight="0.05"
+        android:gravity="right|center_vertical"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/shape_03"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:text=""
+        android:id="@+id/edit_text_password"
+        android:hint="*  *  *  *  *  *  *  *  *  *  *  *  *  *"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingRight="10dp"
+        android:textColorHint="#fff"
+        android:textSize="16sp"
+        android:layout_weight="0.05"
+        android:gravity="right|center_vertical"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectangle_3"
+        android:clickable="true"
+        android:padding="16dp"
+        android:text="إنشاء حساب جديد"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:id="@+id/button_Signup"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="تسجيل الدخول"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:id="@+id/edit_text_forget_passowrd"
+        android:onClick="navigate"/>
+</LinearLayout>

@@ -29,9 +29,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String Creat_User_Table="CREAT TABLE"+ Table_Users+"("+
-                Key_ID+"INTEGER PRIMARY KEY,"+Key_Name+"TEXT,"+
-                Key_Email+"TEXT,"+Key_passowrd+"TEXT)";
+        String Creat_User_Table="CREATE TABLE "+ Table_Users+" ( "+
+                Key_ID+" INTEGER PRIMARY KEY , "+Key_Name+" TEXT, "+
+                Key_Email+" TEXT, "+Key_passowrd+" TEXT)";
         db.execSQL(Creat_User_Table);
     }
 
@@ -65,7 +65,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
     public List<Users>getAllList(){
         List<Users>usersList=new ArrayList<>();
-        String selcQuery="SELECT * FROM"+Table_Users;
+        String selcQuery="SELECT * FROM "+Table_Users;
         SQLiteDatabase db=this.getWritableDatabase();
         Cursor cursor=db.rawQuery(selcQuery,null);
         if(cursor.moveToFirst()){
