@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_table_mange"
+            android:icon="@drawable/dashboard_icon"
+            android:title="إدارة القوائم"
+            android:textAllCaps="false"
+            android:drawablePadding="16dp"
+            android:textSize="18sp"
+            android:gravity="start"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textColor="#ffffff"/>
+        <item
+            android:id="@+id/nav_bus_manage"
+            android:icon="@drawable/ic_directions_bus"
+            android:title="إدارة الباصات"
+            android:textAllCaps="false"
+            android:drawablePadding="16dp"
+            android:textSize="18sp"
+            android:gravity="start"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textColor="#ffffff"/>
+        <item
+            android:id="@+id/nav_feedback1"
+            android:icon="@drawable/ic_chat"
+            android:title="الشكاوى"
+            android:textAllCaps="false"
+            android:drawablePadding="16dp"
+            android:textSize="18sp"
+            android:gravity="start"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textColor="#ffffff"/>
+        <item
+            android:id="@+id/nav_bus_tracking"
+            android:icon="@drawable/activity_icon"
+            android:title="تتبع الحافلة"
+            android:textAllCaps="false"
+            android:drawablePadding="16dp"
+            android:textSize="18sp"
+            android:gravity="start"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textColor="#ffffff" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_chat"
+            android:title="الشكاوى"
+            android:textAllCaps="false"
+            android:drawablePadding="16dp"
+            android:textSize="18sp"
+            android:gravity="start"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textColor="#ffffff"/>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/shape_02"
+            android:title="بياناتى"
+            android:textAllCaps="false"
+            android:drawablePadding="16dp"
+            android:textSize="18sp"
+            android:gravity="start"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textColor="#ffffff"/>
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/settings_icon"
+            android:title="تغير كلمة المرور"
+            android:textAllCaps="false"
+            android:drawablePadding="16dp"
+            android:textSize="18sp"
+            android:gravity="start"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textColor="#a6aff1"/>
+        <item
+            android:id="@+id/nav_manage_people"
+            android:icon="@drawable/tasks_icon"
+            android:title="إدارة المستخدمين"
+            android:textAllCaps="false"
+            android:drawablePadding="16dp"
+            android:textSize="18sp"
+            android:gravity="start"
+            android:clickable="true"
+            android:padding="10dp"
+            android:textColor="#ffffff"/>
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_icon"
+                android:title="تسجيل الخروج"
+                android:textAllCaps="false"
+                android:drawablePadding="16dp"
+                android:textSize="18sp"
+                android:gravity="start"
+                android:clickable="true"
+                android:padding="10dp"
+                android:textColor="#ffffff"/>
+        </menu>
+    </item>
+
+</menu>
