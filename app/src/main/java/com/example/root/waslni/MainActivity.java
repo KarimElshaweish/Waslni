@@ -99,6 +99,8 @@ String Name="";
             Intent intent=new Intent(MainActivity.this,edit_users.class);
             startActivity(intent);
         } else if (id == R.id.nav_bus_manage) {
+            Intent intent=new Intent(MainActivity.this,edit_bus.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_feedback1) {
 
