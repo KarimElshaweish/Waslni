@@ -13,12 +13,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 String Name="";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +31,7 @@ String Name="";
         Name=getIntent().getStringExtra("Name");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -90,7 +96,8 @@ String Name="";
         int id = item.getItemId();
 
         if (id == R.id.nav_table_mange) {
-            Toast.makeText(this, "her", Toast.LENGTH_SHORT).show();
+            Intent intent=new Intent(MainActivity.this,edit_users.class);
+            startActivity(intent);
         } else if (id == R.id.nav_bus_manage) {
 
         } else if (id == R.id.nav_feedback1) {
