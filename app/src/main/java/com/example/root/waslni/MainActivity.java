@@ -107,6 +107,8 @@ String Name="";
         } else if (id == R.id.nav_bus_tracking) {
 
         } else if (id == R.id.nav_feedback) {
+            Intent intent=new Intent(this,feedback.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_profile) {
             try {
